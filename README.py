@@ -49,7 +49,8 @@ with open('1.txt', 'r', encoding='utf-8') as file1, open('2.txt', 'r', encoding=
     lst1 = file1.readlines()
     lst2 = file2.readlines()
     lst3 = file3.readlines()
-    all_lst = {len(lst1): {'name':'1.txt', 'lst': lst1}, len(lst2): {'name':'2.txt', 'lst': lst2}, len(lst3): {'name':'3.txt', 'lst': lst3}}
+    all_lst = {len(lst1): {'name': '1.txt', 'lst': lst1}, len(lst2): {'name': '2.txt', 'lst': lst2},
+               len(lst3): {'name': '3.txt', 'lst': lst3}}
     for _ in range(min(all_lst), max(all_lst)+1):
         if _ in all_lst:
             file4.write(f'{all_lst[_]["name"]}\n{_}\n{"".join(all_lst[_]["lst"])}\n')
