@@ -15,8 +15,8 @@ with open('recipes.txt', 'r', encoding='utf-8') as file:
         cook_book[dish_name] = lst
 
 from pprint import pprint
-
 pprint(cook_book, indent=6)
+print()
 
 
 # Задание №2
